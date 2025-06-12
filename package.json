@@ -1,0 +1,47 @@
+{
+  "name": "express-auth-midu",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch --tsconfig tsconfig.json --env-file .env src/index.ts",
+    "start": "node --env-file .env dist/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "typeorm": "tsx --tsconfig tsconfig.json --env-file .env  -r tsconfig-paths/register ./node_modules/typeorm/cli.js -d src/database.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomasVargas790/express-auth-midu.git"
+  },
+  "keywords": [
+    "express",
+    "midu",
+    "auth"
+  ],
+  "author": "Tomás Vargas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TomasVargas790/express-auth-midu/issues"
+  },
+  "homepage": "https://github.com/TomasVargas790/express-auth-midu#readme",
+  "description": "",
+  "dependencies": {
+    "@types/node": "^24.0.1",
+    "bcrypt": "6.0.0",
+    "cookie-parser": "1.4.7",
+    "express": "5.1.0",
+    "jsonwebtoken": "9.0.2",
+    "pg": "8.16.0",
+    "reflect-metadata": "0.2.2",
+    "tsconfig-paths": "4.2.0",
+    "typeorm": "0.3.24",
+    "typescript": "5.8.3",
+    "zod": "3.25.62"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "5.0.2",
+    "@types/cookie-parser": "1.4.9",
+    "@types/express": "5.0.3",
+    "@types/jsonwebtoken": "9.0.9",
+    "tsx": "4.20.1"
+  }
+}
