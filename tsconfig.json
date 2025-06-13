@@ -9,6 +9,7 @@
     "skipLibCheck": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "useUnknownInCatchVariables": false
+    "useUnknownInCatchVariables": false,
+    "outDir": "dist"
   }
 }

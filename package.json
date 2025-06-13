@@ -1,10 +1,9 @@
 {
   "name": "express-auth-midu",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
     "dev": "tsx watch --tsconfig tsconfig.json --env-file .env src/index.ts",
-    "start": "node --env-file .env dist/index.ts",
+    "start": "node --env-file .env dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "typeorm": "tsx --tsconfig tsconfig.json --env-file .env  -r tsconfig-paths/register ./node_modules/typeorm/cli.js -d src/database.ts"
   },
