@@ -7,6 +7,7 @@ type EnvConfig = {
     DB_NAME: string;
     DB_PORT: number;
     DB_TYPE: 'postgres' | 'mariadb' | 'mysql';
+    HASH_SALT: number
 };
 
 export const {
@@ -17,6 +18,7 @@ export const {
     DB_PASSWORD,
     DB_NAME,
     DB_PORT,
-    DB_TYPE
+    DB_TYPE,
+    HASH_SALT
 } = process.env as unknown as EnvConfig
 
